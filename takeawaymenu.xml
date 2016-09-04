@@ -1,0 +1,28 @@
+<?xml version ="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="takeawaymenu.xsl"?>
+
+<foodmenu>
+  <food> <Name>Fries</Name>
+	  <Price>£1.99</Price>
+	  <Description>Medium serving of fries, these come with some deals or can be ordered seperatly. </Description>
+	  <Calories>600</Calories>
+  </food>
+  
+  <food> <Name>Doner Kebab</Name>
+	   <Price>£2.99</Price>
+	   <Description>Nan bread filled with doner kebab meat, you can choose your own salad and sauce from our available range. </Description>
+	   <Calories> 1000 </Calories>
+  </food>
+  
+  <food> <Name>Cheese Burger</Name>
+	   <Price>£2.50</Price>
+	   <Description>Single cheeseburger, comes with salad and ketchup,can be upgraded to a double cheeseburger for £1 extra. </Description>
+	   <Calories> 800 </Calories>
+  </food>
+  
+  <food> <Name>Pizza</Name>
+	  <Price>Varies (£5-£15)</Price>
+	  <Description>We have a varied range of pizzas, when ordering pick the toppings and size which you want and a price will be calculated.	</Description>
+	  <Calories> 800-1200 </Calories>
+  </food> 
+</foodmenu>

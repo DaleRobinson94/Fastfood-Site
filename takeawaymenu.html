@@ -1,0 +1,71 @@
+<!doctype html>
+<head>
+<title>Bridgeford Bites</title>
+<link rel=stylesheet type="text/css" href="takeawaywebsite.css">
+<script type ="text/javascript"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header" >
+<align="center"><img src="WebsiteLogo.png" width="1215" height="322" alt=""/></div>
+
+<div id="menu" >
+ <ul>
+  <a STYLE="text-decoration:none" href="index.html">&nbsp;Home&nbsp;</a>
+  <a STYLE="text-decoration:none" href="takeawaymenu.html">&nbsp;Menu&nbsp;</a>
+  <a STYLE="text-decoration:none" href="form.html">&nbsp;Order Form&nbsp;</a>
+  <a STYLE="text-decoration:none"  href="slideshow.html">&nbsp;Slide Show&nbsp;</a>
+  <a STYLE="text-decoration:none"  href="mobileapp.html">&nbsp;Download (Mobile App)&nbsp;</a>
+  <a STYLE="text-decoration:none" href="report.html">&nbsp;Report&nbsp;</a>
+ </ul>
+</div>
+
+<div id="content" >
+<p> Hello, this is our menu on here we show you what is avaiable as well as price and details, you can order from this menu on our order form page on the site or app. </p>
+
+<script>
+if (window.XMLHttpRequest)
+{// code for IE7+, Firefox, Chrome, Opera, Safari
+xmlhttp=new XMLHttpRequest();
+}
+else
+{// code for old browsers
+xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+xmlhttp.open("GET","takeawaymenu.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+
+document.write("<b>Takeaway Menu</b>");
+var F=xmlDoc.getElementsByTagName("food");
+for (i=0;i<F.length;i++)
+{
+document.write("<p>");
+document.write("Food name: ");
+document.write(F[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+document.write("<br>");
+document.write("Food price: ");
+document.write(F[i].getElementsByTagName("Price")[0].childNodes[0].nodeValue);
+document.write("<br>");
+document.write(F[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue);
+document.write("<br>");
+document.write("Total calories:");
+document.write(F[i].getElementsByTagName("Calories")[0].childNodes[0].nodeValue);
+document.write("</p>");
+}
+document.write("</table>");
+</script>
+
+</div>
+
+<div id="rightSidebar">
+<span style="position: absolute; left: 1140x; top: 9px;"><img src="deal1.jpg" width="385" height="225" alt=""/></span>
+<span style="position: absolute; left: 1140x; top: 240px;"><img src="deal2.jpg" width="402" height="241" alt=""/> </span>
+<span style="position: absolute; left: 1140x; top: 500px;"><img src="deal3.jpg" width="409" height="253" alt=""/> </span>
+</div> 
+
+<div id="copyright">
+<p align="center">  © 2014 Dale Robinson, Bridgford Bites, All Rights Reserved.</p>
+<!-- end of wrapper -->
+</body>
+</html>

@@ -1,0 +1,85 @@
+div#wrapper {
+width:1600px;
+margin:0 auto;
+text-align:left;
+position:relative;
+}
+
+div#header {
+  position:absolute;
+  top:0;left:0;
+  height:322px;
+  width:100%;
+  text-align:center;
+}
+
+#menu {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size: 32px;
+	color: #F0E80D;
+	width: 1599px;
+	top: 342px;
+	height: 44px;
+	text-align: center;
+	border-radius: 8px;
+	position: absolute;
+	background-color: #A22527;
+}
+
+#menu ul{
+		height:auto;
+		margin:2px;
+}
+
+div#content {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	border-style:solid;
+	border-width:2px;
+	border-color:#F8080C;
+	font-size:24px;
+	width: 1129px;
+	position: absolute;
+	top: 400px;
+	height: 800px;
+}
+
+div#report {
+	border-style:solid;
+	border-width:2px;
+	border-color:#F8080C;
+	font-size:12px;
+	width: 1129px;
+	position: absolute;
+	top: 400px;
+	height: 800px;
+}
+
+div#orderForm {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color: #F8080C;
+	font-size:24px;
+	width: 1129px;
+	position: absolute;
+	top: 400px;
+	height:800px;
+}
+
+div#rightSidebar {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #F8080C;
+	width: 451px;
+	position: absolute;
+	top: 400px;
+	height: 800px;
+	left: 1136px;
+	color: #000000;
+	text-align: left;
+	font-size: medium;
+}
+
+div#copyright {
+	top: 1250px;
+	position: absolute;
+}

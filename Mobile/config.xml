@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <widget xmlns = "http://www.w3.org/ns/widgets"
+ xmlns:gap = "http://phonegap.com/ns/1.0"
+ id = "com.phonegap.example"
+ versionCode="10"
+ version = "1.0.0">
+ <!-- versionCode is optional and Android only -->
+<name>N0520625</name>
+<description>
+Internet Application Development (SOFT20181) and Internet Applications
+Programming (Soft20181).
+</description>
+<author href="BridgfordBites" email="dalerobinson1994@Gmail.com">Dale Robinson</author>
+<icon src="icon.png" />
+</widget>

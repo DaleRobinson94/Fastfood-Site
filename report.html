@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Bridgeford Bites</title>
+<link rel=stylesheet type="text/css" href="takeawaywebsite.css">
+</head>
+<body>
+<div id="wrapper">
+<div id="header" >
+<align="center"><img src="WebsiteLogo.png" width="1215" height="322" alt=""/></div>
+
+<div id="menu" >
+ <ul>
+  <a STYLE="text-decoration:none" href="index.html">&nbsp;Home&nbsp;</a>
+  <a STYLE="text-decoration:none" href="takeawaymenu.html">&nbsp;Menu&nbsp;</a>
+  <a STYLE="text-decoration:none" href="form.html">&nbsp;Order Form&nbsp;</a>
+  <a STYLE="text-decoration:none"  href="slideshow.html">&nbsp;Slide Show&nbsp;</a>
+  <a STYLE="text-decoration:none"  href="mobileapp.html">&nbsp;Download (Mobile App)&nbsp;</a>
+  <a STYLE="text-decoration:none" href="report.html">&nbsp;Report&nbsp;</a>
+ </ul>
+</div>
+
+<div id="report" >
+<h3> Home Page </h3>
+<p> This was made using simple HTML code styled using style sheet CSS. For this page I included an advertisement bar featuring 3 images advertising products, this was made by adding images edited in photoshop. On my home page I also included information on the take away as well as a banner and menu bar linking to other pages within the website. The style sheet used for this features divs such as content and advertisement, these divs are used on all pages of my website as a template to keep the look of the website the same throughout. Making this page had no difficulties apart from a few minor problems ensuring the css code does not overlap menus which would make the website difficult to read.</p>
+<h3> Order Form (XML) </h3>
+<p> For this page I used XML code with stylesheet XSL to produce a form of available orders. This caused problems because I was not aware that to display XML pages I had to be using a web server. I also had problems displaying XML code on an HTML page, with research into XMl and XSL stlying I was able to overcome these problems. While trying to solve these problems I created a CSS stylesheet for the XML code however this did not display in the same way as the XSL code so I decided to go with XSL as a stylesheet.  </p>
+<h3> Booking Form and Validation </h3>
+<p>For this page I created a booking form using javascript functions for validation. The easiest way for me to do this was to use the functions inbuilt in DreamWeaver to add validation to my forms using the behaviours function. This allowed me to add validation such as variables including names to be a necessary input and Email requiring a specific layout eg. xxxx@xxx.com. Other validation I used including making variables necessary to fill out and to have a minimum and maximum length so that the user is warned if they input anything which does not fit the criteria.</p>
+<h3>Slide Show </h3>
+<p>For this page I created an image slideshow which cycles through 5 images using javascript functions. To do this I created an array of images and then used functions such as back and forward to move to different elements within the array. Making this webpage I had problems with the previous function as it was not cycling to the last image after reaching the first. To fix this problem I added restrictions so that if the element was less than 1 it cycled back to the 5th element in the array and had this in reverse for the next function. Other problems I have included the random function as it was displaying the first 4 images but not the 5th one, this was happening because the array started at 1 whereas the random function counted from 0-4 this was fixed by changing the values of the array.</p>
+<h3>Mobile Web App</h3>
+<p>I created a mobile app which works for both android and windows phones. This was done using dreamweaver to create the basics of the app including jquery functions and buttons. After this I created pages to this app to mimic the pages in my website including an order form and booking page. To allow this app to be available on phones I used phoneGap to transfer the code into an xap and apk file for windows and android respectively. Viewing this app online caused some problems, in google chrome the app is shown without styling put into the app however still functions correctly. Using Internet Explorer the app is styled correctly and functions as it is supposed to. Within the app the order form was not submitting correctly so I changed the method it is submitted from a php window to opening a new window using javascript and displaying the user input.</p>
+<h3> Design Plan </h3>
+<p>While making this website I stuck to the original idea of it being based for a fast food takeaway restaurant which would be found on a highstreet. I used a simple to understand layout and small order form to keep the website as easy to read as possible and used advertisement as a selling point to demonstrate their products throughout the site. I had to change from the original spec creating the order form on my mobile app as using a php file was not showing any results, however using javascript functions to display a window allowed me to get the results I wanted.</p>
+</div>
+
+<div id="rightSidebar">
+<span style="position: absolute; left: 1140x; top: 9px;"><img src="deal1.jpg" width="385" height="225" alt=""/></span>
+<span style="position: absolute; left: 1140x; top: 240px;"><img src="deal2.jpg" width="402" height="241" alt=""/> </span>
+<span style="position: absolute; left: 1140x; top: 500px;"><img src="deal3.jpg" width="409" height="253" alt=""/> </span>
+</div> 
+
+<div id="copyright">
+<p align="center">  © 2014 Dale Robinson, Bridgford Bites, All Rights Reserved.</p>
+<!-- end of wrapper -->
+</body>
+</html>

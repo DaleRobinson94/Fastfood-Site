@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<title>Bridgeford Bites</title>
+<link rel=stylesheet type="text/css" href="takeawaywebsite.css">
+
+<script type ="text/javascript">
+
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header" >
+<align="center"><img src="WebsiteLogo.png" width="1215" height="322" alt=""/></div>
+
+<div id="menu" >
+ <ul>
+  <a STYLE="text-decoration:none" href="index.html">&nbsp;Home&nbsp;</a>
+  <a STYLE="text-decoration:none" href="takeawaymenu.html">&nbsp;Menu&nbsp;</a>
+  <a STYLE="text-decoration:none" href="form.html">&nbsp;Order Form&nbsp;</a>
+  <a STYLE="text-decoration:none"  href="slideshow.html">&nbsp;Slide Show&nbsp;</a>
+  <a STYLE="text-decoration:none"  href="mobileapp.html">&nbsp;Download (Mobile App)&nbsp;</a>
+  <a STYLE="text-decoration:none" href="report.html">&nbsp;Report&nbsp;</a>
+ </ul>
+</div>
+<div id="content">
+
+<form id="contactForm" action="confirmation.php" method="post">
+
+<h3> Enter your details to become registered on the website to be eligible for orders. </h3>
+
+<fieldset>
+First name:<br>
+<input name="firstName" type="text" required id="firstName" placeholder ="Enter your name" onBlur="MM_validateForm('firstName','','R');return document.MM_returnValue" >
+
+<br>
+
+Last name:<br>
+<input name="lastName" type="text" required id="lastName" placeholder ="Enter your name" onBlur="MM_validateForm('lastName','','R');return document.MM_returnValue" >
+</fieldset>
+
+<br>
+<fieldset>
+Email:<br>
+<input name="Email" type="text" required id="Email" placeholder ="Enter your Email" onBlur="MM_validateForm('Email','','RisEmail');return document.MM_returnValue"  size ="30" maxlength ="60">
+</fieldset>
+
+<br>
+<fieldset>
+Date:<br>
+<input name ="date" input type="date" required max="2016-01-01" min="2015-01-01">
+</fieldset>
+<br>
+<fieldset>
+Time:<br>
+<input name="time" input type="time" >
+</fieldset>
+<br>
+<input type ="submit">
+</form>
+</div>
+
+<div id="rightSidebar">
+<span style="position: absolute; left: 1140x; top: 9px;"><img src="deal1.jpg" width="385" height="225" alt=""/></span>
+<span style="position: absolute; left: 1140x; top: 240px;"><img src="deal2.jpg" width="402" height="241" alt=""/> </span>
+<span style="position: absolute; left: 1140x; top: 500px;"><img src="deal3.jpg" width="409" height="253" alt=""/> </span>
+</div> 
+<div id="copyright">
+<p align="center">  © 2014 Dale Robinson, Bridgford Bites, All Rights Reserved.</p>
+</div>
+<!-- end of wrapper -->
+</body>
+
+</html>
+
+
+

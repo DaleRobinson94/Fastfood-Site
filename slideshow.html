@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel=stylesheet type="text/css" href="takeawaywebsite.css">
+<meta http-equiv="Content-Type" content="text/html;
+charset=iso-8859-1">
+</head>
+<body>
+<div id="wrapper">
+<div id="header" >
+<align="center"><img src="WebsiteLogo.png" width="1215" height="322" alt=""/></div>
+
+<div id="menu" >
+ <ul>
+  <a STYLE="text-decoration:none" href="index.html">&nbsp;Home&nbsp;</a>
+  <a STYLE="text-decoration:none" href="takeawaymenu.html">&nbsp;Menu&nbsp;</a>
+  <a STYLE="text-decoration:none" href="form.html">&nbsp;Order Form&nbsp;</a>
+  <a STYLE="text-decoration:none" href="slideshow.html">&nbsp;Slide Show&nbsp;</a>
+  <a STYLE="text-decoration:none" href="mobileapp.html">&nbsp;Download (Mobile App)&nbsp;</a>
+  <a STYLE="text-decoration:none" href="report.html">&nbsp;Report&nbsp;</a>
+ </ul>
+</div>
+
+<div id="content" >
+<script type = "text/javascript">
+var img = new Array();
+img[0]= new Image();
+img[0].src ="img1.jpg";
+img[1]= new Image();
+img[1].src ="img2.jpg";
+img[2]= new Image();
+img[2].src ="img3.jpg";
+img[3]= new Image();
+img[3].src ="img4.jpg";
+img[4]= new Image();
+img[4].src ="img5.jpg";
+
+
+var number =0;
+
+function moveToNextSlide()
+{
+	number++
+	if(number>5)
+	{
+		number=0;
+	}
+	document.slideshow.src=img[number].src;
+}
+
+function moveToPreviousSlide()
+{
+		number--
+	if(number<0)
+	{
+		number=4;
+	}
+	document.slideshow.src=img[number].src;
+}
+
+function moveToFirstSlide()
+{
+		number=0
+	if(number>5)
+	{
+		number=0;
+	}
+	document.slideshow.src=img[number].src;
+}
+
+function moveToLastSlide()
+{
+		number=4
+	if(number>5)
+	{
+		number=0;
+	}
+	document.slideshow.src=img[number].src;
+}
+
+function moveToRandomSlide ()
+{
+	number=Math.floor(Math.random() *5);
+		if(number>5)
+	{
+		number=0;
+	}
+	document.slideshow.src=img[number].src;
+}
+
+function thumbnail1 ()
+{
+	number =0
+	if(number>5)
+	{
+		number=0;
+	}
+	document.slideshow.src=img[number].src;
+}
+
+function thumbnail2 ()
+{
+	number =1
+	if(number>5)
+	{
+		number=0;
+	}
+	document.slideshow.src=img[number].src;
+}
+
+function thumbnail3 ()
+{
+	number =2
+	if(number>5)
+	{
+		number=0;
+	}
+	document.slideshow.src=img[number].src;
+}
+
+function thumbnail4 ()
+{
+	number =3
+	if(number>5)
+	{
+		number=0;
+	}
+	document.slideshow.src=img[number].src;
+}
+
+function thumbnail5 ()
+{
+	number =4
+	if(number>5)
+	{
+		number=0;
+	}
+	document.slideshow.src=img[number].src;
+}
+</script>
+
+<img src="img1.jpg" name="slideshow" width="600" height="487.5"/>
+<p>
+<a href="javascript:moveToFirstSlide()"><img src="first.jpg" width="76" height="64" alt=""/> </a>
+<a href="javascript:moveToPreviousSlide()"> <img src="previous.jpg" width="76" height="64" alt=""/> </a>
+<a href="javascript:moveToNextSlide()"> <img src="next.jpg" width="76" height="64" alt=""/> </a>
+<a href="javascript:moveToLastSlide()"><img src="last.jpg" width="76" height="64" alt=""/></a>
+<a href="javascript:moveToRandomSlide()"><img src="random.jpg" width="76" height="64" alt=""/></a>
+</p>
+<p> Click to enlarge the images below: </p>
+<a href="javascript:thumbnail1()"><img src="img1.jpg" width="76" height="64"/></a>
+<a href="javascript:thumbnail2()"><img src="img2.jpg" width="76" height="64"/></a>
+<a href="javascript:thumbnail3()"><img src="img3.jpg" width="76" height="64"/></a>
+<a href="javascript:thumbnail4()"><img src="img4.jpg" width="76" height="64"/></a>
+<a href="javascript:thumbnail5()"><img src="img5.jpg" width="76" height="64"/></a>
+</div>
+<div id="rightSidebar">
+<span style="position: absolute; left: 1140x; top: 9px;"><img src="deal1.jpg" width="385" height="225" alt=""/></span>
+<span style="position: absolute; left: 1140x; top: 240px;"><img src="deal2.jpg" width="402" height="241" alt=""/> </span>
+<span style="position: absolute; left: 1140x; top: 500px;"><img src="deal3.jpg" width="409" height="253" alt=""/> </span>
+</div> 
+
+<div id="copyright">
+<p align="center">  © 2014 Dale Robinson, Bridgford Bites, All Rights Reserved.</p>
+</div>
+</body>
+</html>
